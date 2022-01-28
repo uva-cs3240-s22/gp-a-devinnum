@@ -25,6 +25,7 @@ while (numberOfGuessesLeft>0):
         #Replaces "-" with correctly guessed letter
         for i in range(len(secretWord)):
             if secretWord[i]== guess:
+                #Not sure why this next line is here but it doesn't hurt anything.
                 x = secretWord[i:].find(guess)
                 hiddenWord= hiddenWord[0:i+1]+guess.upper()+hiddenWord[i+2:]
 
